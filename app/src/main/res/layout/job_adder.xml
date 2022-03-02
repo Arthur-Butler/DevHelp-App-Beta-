@@ -8,7 +8,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="49dp"
-        android:background="@color/teal_200"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -19,17 +19,22 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back"/>
+            android:src="@drawable/ic_back" />
 
         <ImageView
             android:id="@+id/listProfiler"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:focusable="true"
-            android:src="@drawable/avatarr"
+            android:layout_marginLeft="15dp"
             android:clickable="true"
-            android:onClick="viewProfile" />
+            android:focusable="true"
+            android:onClick="viewProfile"
+            android:src="@drawable/avatarr" />
+        <TextView
+            android:id="@+id/job_add_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <Button
             android:layout_width="50dp"
             android:layout_height="wrap_content"
@@ -123,6 +128,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_post"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

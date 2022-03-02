@@ -3,6 +3,7 @@ package com.younglings.devhelp.ui.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import com.younglings.devhelp.ui.login.models.User;
@@ -72,10 +73,14 @@ public class FirstActivity extends AppCompatActivity {
                     }
                     else{
                         Log.d("firebase","Password or Username Correct");
+                        SharedPreferences.Editor editor = getSharedPreferences("unique_name", MODE_PRIVATE).edit();
+                        editor.putString("username", userMail.getText().toString());
+                        editor.commit();
                         Intent intent = new Intent(getApplicationContext(), Explore.class);
                         startActivity(intent);
-                        User sum = new User(userMail.getText().toString(),userPassword.getText().toString());
-                        ArrayList<User> list = new ArrayList<>();
+                        //User sum = new User(userMail.getText().toString(),userPassword.getText().toString());
+                        //ArrayList<User> list = new ArrayList<>();
+
                     }
 
                 }

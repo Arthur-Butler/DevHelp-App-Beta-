@@ -15,7 +15,7 @@
     <string name="upload_your_image">Upload Your Image</string>
     <string name="full_name">Full Name</string>
     <string name="email_address">Email Address</string>
-    <string name="sign_up">Sign Up if you do not have an account</string>
+    <string name="sign_up">Join Us</string>
     <string name="sign_in">Sign In</string>
     <string name="i_m_already_a_member">I am already a member.</string>
     <string name="i_am_a_new_user">I am a New user.</string>
@@ -32,6 +32,11 @@
     <string name="add_post">ADD DEV LISTING</string>
     <string name="profile_name">FULL NAME</string>
     <string name="profile_email">EMAIL ADDRESS</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="github_link"><a href='https://github.com/Arthur-Butler'>GITHUB</a></string>
+    <string name="linkedin_link"><a href='https://www.linkedin.com/in/arthur-butler-7721591a4'>LINKEDIN</a></string>
+    <string name="personal_link"><a href='http://www.arthurnyanisobutler.com/'>PERSONAL WEBSITE</a></string>
     <string-array name="field_array">
         <item>BACK-END DEVELOPER</item>
         <item>FRONT-END DEVELOPER</item>

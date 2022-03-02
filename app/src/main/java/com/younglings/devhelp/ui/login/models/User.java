@@ -16,8 +16,9 @@ public class User {
     public User(String username, String password) {
         this.username = username;
         this.password = password;
-        mDatabase.child("LoggedIn").child("username").setValue(username);
-        mDatabase.child("LoggedIn").child("password").setValue(password);
+        mDatabase.child("LoggedIn").child("username").setValue(this.username);
+        mDatabase.child("LoggedIn").child("password").setValue(this.password);
     }
+
 
 }

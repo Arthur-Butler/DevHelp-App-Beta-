@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explorePost"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:clickable="true"
-    android:onClick="viewJob"
+    android:focusable="true"
     android:layout_marginTop="0dp">
 
     <RelativeLayout
@@ -13,29 +16,43 @@
         android:layout_marginTop="16dp">
 
         <TextView
-            android:id="@+id/item_number"
-            android:layout_width="wrap_content"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="49dp"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-        <TextView
             android:id="@+id/content"
-            android:layout_width="wrap_content"
-            android:layout_height="93dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="147dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="71dp"
             android:background="@color/white"
             android:textAppearance="?attr/textAppearanceListItem"
             android:textColor="@color/black"
             android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="89dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="334dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/logo"
+            android:contentDescription="TODO" />
 
     </RelativeLayout>
 </LinearLayout>

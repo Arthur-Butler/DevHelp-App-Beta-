@@ -10,4 +10,9 @@
     <color name="gray">#7E7E7E</color>
     <color name="sign_up_button">#6C91FF</color>
     <color name="blue">#5970FF</color>
+    <color name="black_overlay">#000000</color>
+    <color name="wine_red">#9b0000</color>
+    <color name="round_button_color">#9b0000</color>
+    <color name="round_gradient_button_start_color">#DC2424</color>
+    <color name="round_gradient_button_end_color">#4A569D</color>
 </resources>

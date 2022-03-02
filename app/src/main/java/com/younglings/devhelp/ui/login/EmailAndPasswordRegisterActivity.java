@@ -223,6 +223,7 @@ public class EmailAndPasswordRegisterActivity extends AppCompatActivity{
     };*/
 
     public void writeNewUser(String email, String name, String password, String field, String languages) {
+        name=name.trim();
         mDatabase.child("Users").child(name).child("Password").setValue(password);
         mDatabase.child("Users").child(name).child("Email").setValue(email);
         mDatabase.child("Users").child(name).child("Specialization").setValue(field);

@@ -48,6 +48,7 @@ public class ItemFragment extends Fragment {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("Jobs");
     public ItemFragment() {
+
     }
 
 
@@ -96,8 +97,6 @@ public class ItemFragment extends Fragment {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
-
-
             }
 
             @Override

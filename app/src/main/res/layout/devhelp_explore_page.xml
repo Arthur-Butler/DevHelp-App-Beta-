@@ -16,7 +16,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:background="@color/teal_200"
+        android:background="@color/white"
         android:elevation="5dp"
         android:theme="@style/AppTheme.NoActionBar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,22 +30,28 @@
             android:id="@+id/profileimage2"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/avatarr"
             android:clickable="true"
             android:focusable="true"
-            android:onClick="viewProfile"/>
+            android:onClick="viewProfile"
+            android:src="@drawable/avatarr" />
+
+        <TextView
+            android:id="@+id/profilename"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wine_red"/>
 
         <Button
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/sign_out"
-            android:layout_marginLeft="300dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/log_out_copy"
             android:clickable="true"
+            android:contentDescription="@string/sign_out"
             android:focusable="true"
-            android:onClick="logout"
-            android:background="@drawable/log_out"
             tools:layout_editor_absoluteX="290dp"
-            tools:layout_editor_absoluteY="3dp" />
+            tools:layout_editor_absoluteY="3dp"/>
     </androidx.appcompat.widget.Toolbar>
 
     <ListView
@@ -58,20 +64,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272"
         tools:listitem="@layout/fragment_item" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="173dp"
         android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
         android:text="Add post"
         android:textSize="20sp"
-        android:onClick="addJob"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.992" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
